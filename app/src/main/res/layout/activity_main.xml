@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.regis.servicedemo.MainActivity">
+
+    <TextView
+        android:id="@+id/TitleText"
+        android:textAlignment="center"
+        android:layout_marginTop="10sp"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:layout_width="383dp"
+        android:layout_height="49dp"
+        android:text="@string/service_demo"
+         />
+    <Button
+        android:id="@+id/start"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:text="@string/start_service"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/TitleText"
+        android:layout_centerHorizontal="true"
+        android:onClick="startingService"/>
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:text="@string/stop_service"
+      android:layout_below="@+id/start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:onClick="stoppingService"/>
+
+
+
+</RelativeLayout>
