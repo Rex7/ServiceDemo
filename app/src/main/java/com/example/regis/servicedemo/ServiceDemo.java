@@ -12,13 +12,13 @@ public class ServiceDemo extends Service {
 
     @Override
     public void onCreate() {
-       Toast.makeText(this,"Service Created",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Service Created", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onDestroy() {
 
-        Toast.makeText(this,"Service is Stopped",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Service is Stopped", Toast.LENGTH_SHORT).show();
     }
 
     @Nullable
@@ -27,14 +27,9 @@ public class ServiceDemo extends Service {
         return null;
     }
 
-   public int onStartCommand(Intent intent,int flag,int id){
-
-
-             Log.v("message ","count");
-             Toast.makeText(this,"My service is up and running",Toast.LENGTH_SHORT).show();
-
-
-
-       return START_STICKY;
-   }
+    public int onStartCommand(Intent intent, int flag, int id) {
+        Log.v("message ", "Intent Name ");
+        Toast.makeText(this, "My service is up and running", Toast.LENGTH_SHORT).show();
+        return START_STICKY;
+    }
 }
